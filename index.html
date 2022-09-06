@@ -1,0 +1,50 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculando sua média...</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="page-title">
+          Calculadora de média
+        </h1>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="nota">
+        <p>Informe a primeira nota</p>
+        <input type="number" class="number" id="nota1" placeholder="">
+      </div>
+
+      <div class="nota">
+        <p>Informe a segunda nota</p>
+        <input type="number" class="number" id="nota2" placeholder="">
+      </div>
+
+      <div class="nota">
+        <p>Informe a terceira nota</p>
+        <input type="number" class="number" id="nota3" placeholder="">
+      </div>
+
+      <div class="nota">
+        <p>Informe a quarta nota</p>
+        <input type="number" class="number" id="nota4" placeholder="">
+      </div>
+
+      <div class="buttom">
+        <input type="button" id="calcular" value="Calcular" onclick="calcularMedia()">
+      </div>
+
+      <div class="result">
+        <p id="res"></p>
+        <img id="img-res" src="" alt="">
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
