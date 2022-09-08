@@ -8,9 +8,7 @@ const calcularMedia = () => {
     const nota4 = Number(document.getElementById("nota4").value);
     let media = (nota1 + nota2 + nota3 + nota4) / 4;
 
-    if (!nota1 || !nota2 || !nota3 || !nota4) {
-        return;
-    } else if (media.toFixed(1) >= 7) {
+    if (media.toFixed(1) >= 7) {
         result.innerText = `Você foi aprovado! Sua média foi: ${media.toFixed(1)}`;
         result.style.color = "#90e890";
         imgResult.src = "./assets/kitty.gif";
